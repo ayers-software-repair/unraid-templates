@@ -1,0 +1,16 @@
+<Container version="2">
+  <Name>Magpie</Name>
+  <Repository>ayerselectronics/magpie:latest</Repository>
+  <Registry>https://hub.docker.com/r/ayerselectronics/magpie</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Icon>https://ayers.repair/magpie/magpie-mark.png</Icon>
+  <WebUI>http://[IP]:[PORT:24622]/</WebUI>
+  <Overview>Self-hosted, cable-TV-first media server: your channels, recordings and library on every screen.</Overview>
+  <Support>https://ayers.repair/magpie/support.html</Support>
+  <Project>https://ayers.repair/magpie/</Project>
+  <TemplateURL>https://raw.githubusercontent.com/ayers-software-repair/unraid-templates/main/templates/magpie.xml</TemplateURL>
+  <Category>MediaServer:Video</Category>
+  <Config Name="Data" Target="/data" Default="/mnt/user/appdata/magpie" Mode="rw" Type="Path" Display="always" Required="true"/>
+  <Config Name="Media" Target="/media" Default="/mnt/user/media" Mode="rw" Type="Path" Display="always" Required="true"/>
+</Container>
